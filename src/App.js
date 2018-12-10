@@ -67,7 +67,7 @@ class App extends Component {
 											<br />
 										</p>
 										<p>
-											<a href='https://84y6zykmnj.codesandbox.io/' target='blank_'>
+											<a href='https://codesandbox.io/s/lrxp4kpvzz' target='blank_'>
 												Working code-wrapping solution on CodeSandbox
 											</a>
 										</p>
