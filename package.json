@@ -2,13 +2,7 @@
   "name": "hoc-async-methods",
   "version": "1.0.0",
   "description": "",
-  "keywords": [
-    "hoc",
-    "test",
-    "higher-order-components",
-    "testing",
-    "axios"
-  ],
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "3.6.2",
