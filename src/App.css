@@ -1,0 +1,114 @@
+body {
+  font-size: 14px
+}
+.App {
+  margin: 28px;
+}
+.show-grid [class^=col-] {
+   padding-top: 0px; 
+  padding-bottom: 0px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.row {
+   margin-right: 0px; 
+   margin-left: 0px; 
+}
+.AppItem {
+  border: 1px solid black;
+  margin: 20px;
+}
+.methodContainer{
+  
+  border: 2px solid blue;
+}
+.title {
+  color: blue
+ }
+.url {
+   font-size: 1.4em;
+   text-align: left
+ }
+ .method-list {
+   margin: 3px;
+ }
+ 
+.method {
+  background: rgb(173, 146, 151)
+}
+.request {
+  color: green
+}
+.isLoading {
+  margin-left: 5px;
+}
+.col-sm-9.url {
+  font-weight: initial;
+  padding: 5px;
+  font-size: 1.2em;
+  color: #963a50;
+}
+.requestTitle {
+  border: 1px solid blue;
+  background: none;
+  float: left;
+  background: white;
+}
+.requestUrl {
+  background: pink
+}
+.resultData {
+ 
+  color: green;
+  
+  min-height: 53px;
+ 
+}
+.errorData {
+  color: red;
+  min-height: 53px;
+ 
+}
+.resultData {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
