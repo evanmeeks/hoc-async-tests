@@ -49,19 +49,7 @@ class App extends Component {
 
     return (
       <div className="App ">
-        <div>
-          <p> Why is the code wrapped???</p>
-          <p> A: Because the source is minified remotely! Wow.</p>
-          <p>
-            <a
-              alt="HOC (Higher Order Components) Async Methods"
-              href="https://codesandbox.io/s/qzr0qxlpkq"
-            >
-              {" "}
-              The solution on CodeSandbox
-            </a>{" "}
-          </p>
-        </div>
+        <div />
         <div>{this.methodsList(urls, "bad")}</div>
         {/* <div>{this.methodsList(urls, 'good')}</div> */}
       </div>

@@ -1,23 +1,29 @@
 body {
-  font-size: 14px
+  font-size: 14px;
 }
 .App {
   margin: 28px;
 }
-.show-grid [class^=col-] {
-   padding-top: 0px; 
+.show-grid [class^="col-"] {
+  padding-top: 0px;
   padding-bottom: 0px;
   background-color: #eee;
-  background-color: rgba(86,61,124,.15);
+  background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid #ddd;
-  border: 1px solid rgba(86,61,124,.2);
+  border: 1px solid rgba(86, 61, 124, 0.2);
 }
 .tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
 }
-
+.force-wrap code {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
@@ -36,33 +42,32 @@ body {
   visibility: visible;
 }
 .row {
-   margin-right: 0px; 
-   margin-left: 0px; 
+  margin-right: 0px;
+  margin-left: 0px;
 }
 .AppItem {
   border: 1px solid black;
   margin: 20px;
 }
-.methodContainer{
-  
+.methodContainer {
   border: 2px solid blue;
 }
 .title {
-  color: blue
- }
+  color: blue;
+}
 .url {
-   font-size: 1.4em;
-   text-align: left
- }
- .method-list {
-   margin: 3px;
- }
- 
+  font-size: 1.4em;
+  text-align: left;
+}
+.method-list {
+  margin: 3px;
+}
+
 .method {
-  background: rgb(173, 146, 151)
+  background: rgb(173, 146, 151);
 }
 .request {
-  color: green
+  color: green;
 }
 .isLoading {
   margin-left: 5px;
@@ -80,19 +85,16 @@ body {
   background: white;
 }
 .requestUrl {
-  background: pink
+  background: pink;
 }
 .resultData {
- 
   color: green;
-  
+
   min-height: 53px;
- 
 }
 .errorData {
   color: red;
   min-height: 53px;
- 
 }
 .resultData {
   white-space: pre-wrap;
