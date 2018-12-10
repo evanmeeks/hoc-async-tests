@@ -14,38 +14,55 @@ const Request = ({
 }) => {
   // const loadingClass = isLoading ? 'label-primary' : 'label-default';
   return (
-    <div className="col-sm-9">
-      <span className="title">{name}</span>
-      <span>&nbsp;</span>
-      <span>Method {method}</span>
-      <span>&nbsp;</span>
+    <div
+      style={{
+        margin: "20px",
+        border: "1px solid #d4d5ec",
+        paddingBottom: "4px"
+      }}
+      className="col-sm-9"
+    >
+      <div
+        style={{ margin: "20px", border: "1px solid #d8d5d5", padding: "7px" }}
+      >
+        <div>
+          HOC: <span className="title">{name}</span>
+        </div>
+        <div>&nbsp;</div>
+        <div>Method: {method}</div>
+        <span>&nbsp;</span>
 
-      <Code codeString={methodFn} language="javascript">
-        {methodFn}
-      </Code>
-
-      <span>&nbsp;</span>
-      <span>URL : {url}</span>
+        <div>
+          URL : <span style={{ color: "blue" }}>{url}</span>
+        </div>
+      </div>
       <span className="label label-primary">
         {isLoading ? "Loading..." : ""}
       </span>
-      <div className="row">
-        <div className="col-xs-8 col-sm-6">
-          Result <JSONPretty id="json-pretty" codeString={data} />
-          <pre style={{ whitespace: "normal", wordBreak: "break-all" }}>
-            <Code
-              codeString={data ? JSON.stringify(data) : data}
-              language="json"
-            />
-          </pre>
-        </div>
+      <div style={{ margin: "20px", paddingBottom: "4px" }} className="row">
         <div className="col-xs-4 col-sm-6">
-          <pre className="error">
-            Error{" "}
-            <pre className="errorData">
-              {error ? JSON.stringify(error) : "no error"}
+          Code:
+          <Code codeString={methodFn} language="javascript">
+            {methodFn}
+          </Code>
+          <div className="col-xs-8 col-sm-6">
+            <br /> Result: <JSONPretty id="json-pretty" codeString={data} />
+            <pre
+              className="force-wrap"
+              style={{ whitespace: "normal", wordBreak: "break-all" }}
+            >
+              <Code
+                codeString={data ? JSON.stringify(data) : data}
+                language="json"
+              />
             </pre>
-          </pre>
+          </div>
+          <div className="error">
+            Error{" "}
+            <span className="errorData">
+              {error ? JSON.stringify(error) : "no error"}
+            </span>
+          </div>
         </div>
       </div>
     </div>
