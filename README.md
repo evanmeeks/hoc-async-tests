@@ -3,7 +3,6 @@
 Newer solutions such as Axios and Fetch don't account for all error cases when using a default recommended implementation. 
 This project was to test various "default" implementations against each other provided good and bad fetching endpoints.
 
-GitHub: https://github.com/evanmeeks/hoc-async-tests
 Demo: https://hoc-async-tests.netlify.com/
 
 ## Demo Source Code Not Wrapping on Production
