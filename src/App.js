@@ -57,14 +57,12 @@ class App extends Component {
 								<div id='DIV_6'>
 									<p>
 										If you're viewing this on Netlify I left this hosted on Netlify to demonstrate the intital problem I had demoing this app. As you can see
-										below the demonstrated higher order component source isn't wrapping or formatting. Interesting problem. Eventually I realized the problem
-										was that since I was using .toString() on the source code that was being deployed to production, the reason it wouldn't wrap or format
-										wasn't due to some difference in hosting.
+										below the demonstrated higher order component source isn't wrapping or formatting. It was an interesting problem. 
+										After deploying to Netlify the source display of the .toString() source from the HOC wrapped component was not "wrapping".
 										<p>
-											It
-											<strong> was due to the fact that the source is getting minimized on production builds</strong> , and the in-memory code source is still
-											interestingly enough, still minimized. &nbsp;
-											<br />
+											It was due to the fact that the WebPack production builds were being minimized, <i>and the in-memory code source is still
+											interestingly enough, still minimized.</i>
+																						<br />
 										</p>
 										<p>
 											<a href='https://codesandbox.io/s/lrxp4kpvzz' target='blank_'>
